@@ -1,4 +1,5 @@
 import React from 'react';
+import App from './App';
 
 export default class UserAndPass extends React.Component {
     render(){
@@ -42,6 +43,11 @@ export default class UserAndPass extends React.Component {
               <button type="submit" className="btn btn-default">
                 Sign in
               </button>
+            </div>
+          </div>
+          <div className="form-group">
+            <div className="col-sm-offset-2 col-sm-10">
+              { this.props.user }
             </div>
           </div>
         </form>
